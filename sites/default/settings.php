@@ -23,3 +23,15 @@ $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {
   include $local_settings;
 }
+$databases['default']['default'] = array (
+  'database' => 'custup1',
+  'username' => 'custup1',
+  'password' => 'custup1',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['hash_salt'] = 'vodzas6UznbTNHBPiW_XWeS1AAAhj-a1S15XReShXh9ZSLkFspUII8xeQr-C1abCInt7VcktDA';
+$settings['install_profile'] = 'standard';
